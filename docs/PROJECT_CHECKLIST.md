@@ -4,8 +4,8 @@
 
 | S/N | Task                                                      | Area        | Status      | Started Date | Completed Date | Done |
 |-----|-----------------------------------------------------------|-------------|-------------|--------------|----------------|------|
-| 1   | Initialize Git repository and project structure           | Backend     | In Progress | 2025-07-24   |                | [ ]  |
-| 2   | Initialize Git repository and project structure           | Frontend    | Pending     |              |                | [ ]  |
+| 1   | Initialize Git repository and project structure           | Backend     | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 2   | Initialize Git repository and project structure           | Frontend    | In Progress | 2025-07-24   |                | [ ]  |
 | 3   | Set up core markdown documentation                        | Backend     | Pending     |              |                | [ ]  |
 | 4   | Set up core markdown documentation                        | Frontend    | Pending     |              |                | [ ]  |
 | 5   | Set up backend (Flask + Flask-SocketIO) environment       | Backend     | Pending     |              |                | [ ]  |
@@ -101,12 +101,11 @@
 
 | S/N | Step                                                                 | Status      | Started Date | Completed Date | Done |
 |-----|----------------------------------------------------------------------|-------------|--------------|----------------|------|
-| 1   | Decide on the backend root directory structure                       | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 1   | Decide on the frontend root directory structure                      | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
 | 2   | Initialize a new Git repository (if not already initialized)         | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 3   | Create a Python virtual environment in the backend folder              | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 4   | Create a .gitignore file with Python/Flask-specific ignores           | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 5   | Create the backend folder structure (app, tests, config, etc.)        | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 6   | Add a README.md in the backend directory with a brief description     | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 7   | Add an initial requirements.txt (empty or with Flask, Flask-SocketIO) | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 8   | Make the first commit with the initial backend structure              | Pending     |              |                | [ ]  |
+| 3   | Create a .gitignore file with Flutter/Dart-specific ignores          | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 4   | Create the frontend folder structure (lib, test, assets, etc.)       | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 5   | Add a README.md in the frontend directory with a brief description   | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 6   | Add an initial pubspec.yaml (with dependencies, name, etc.)          | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 7   | Make the first commit with the initial frontend structure            | Pending     |              |                | [ ]  |
 

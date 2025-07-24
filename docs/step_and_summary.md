@@ -40,4 +40,15 @@ This document tracks each completed step in the project, provides a summary of w
 
 ---
 
+### Step: Decide on frontend root directory structure
+**Summary:**
+- Chose a modular frontend structure for Flutter desktop: lib/, test/, assets/, build/, .gitignore, pubspec.yaml, and README.md.
+- Assets folder includes images/ and fonts/ subfolders.
+
+**Improvement Suggestions:**
+- Review structure after initial development to ensure it meets project needs.
+- Consider adding scripts/ or web/ if web support or automation is needed.
+
+---
+
 <!-- Add new entries below this line --> 
