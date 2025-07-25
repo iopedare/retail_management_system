@@ -34,6 +34,19 @@ This is the backend service for the Retail Management System, built with Flask a
    python run.py
    ```
 
+## Documentation & References
+- [Business Logic](../docs/business_logic.md)
+- [Implementation Plan](../docs/implementation_plan.md)
+- [Project Workflow](../docs/workflow.md)
+- [Project Rules](../docs/PROJECT_RULES.md)
+- [Project Checklist](../docs/PROJECT_CHECKLIST.md)
+
+## API Reference
+- See `API_REFERENCE.md` (to be created) for details on REST and WebSocket endpoints, parameters, and examples.
+
+## Architecture
+- See `ARCHITECTURE.md` (to be created) for backend architecture, master-client sync, and data flow.
+
 ---
 
 For more details, see the main project documentation and PRD.

@@ -5,9 +5,9 @@
 | S/N | Task                                                      | Area        | Status      | Started Date | Completed Date | Done |
 |-----|-----------------------------------------------------------|-------------|-------------|--------------|----------------|------|
 | 1   | Initialize Git repository and project structure           | Backend     | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 2   | Initialize Git repository and project structure           | Frontend    | In Progress | 2025-07-24   |                | [ ]  |
-| 3   | Set up core markdown documentation                        | Backend     | Pending     |              |                | [ ]  |
-| 4   | Set up core markdown documentation                        | Frontend    | Pending     |              |                | [ ]  |
+| 2   | Initialize Git repository and project structure           | Frontend    | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 3   | Set up core markdown documentation                        | Backend     | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
+| 4   | Set up core markdown documentation                        | Frontend    | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
 | 5   | Set up backend (Flask + Flask-SocketIO) environment       | Backend     | Pending     |              |                | [ ]  |
 | 6   | Set up frontend (Flutter Desktop) environment             | Frontend    | Pending     |              |                | [ ]  |
 | 7   | Define master-client architecture and sync logic           | Backend     | Pending     |              |                | [ ]  |
@@ -101,11 +101,9 @@
 
 | S/N | Step                                                                 | Status      | Started Date | Completed Date | Done |
 |-----|----------------------------------------------------------------------|-------------|--------------|----------------|------|
-| 1   | Decide on the frontend root directory structure                      | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 2   | Initialize a new Git repository (if not already initialized)         | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 3   | Create a .gitignore file with Flutter/Dart-specific ignores          | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 4   | Create the frontend folder structure (lib, test, assets, etc.)       | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 5   | Add a README.md in the frontend directory with a brief description   | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 6   | Add an initial pubspec.yaml (with dependencies, name, etc.)          | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
-| 7   | Make the first commit with the initial frontend structure            | Pending     |              |                | [ ]  |
+| 1   | Review required markdown files for frontend documentation            | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 2   | Create or update README.md in frontend with frontend-specific info   | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 3   | Ensure frontend-relevant sections in docs/ are up to date            | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 4   | Add frontend setup and usage instructions to documentation           | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 5   | Commit and push updated markdown documentation                       | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
 

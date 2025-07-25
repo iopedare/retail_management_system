@@ -26,6 +26,19 @@ This is the frontend application for the Retail Management System, built with Fl
    flutter run -d windows
    ```
 
+## Documentation & References
+- [Business Logic](../docs/business_logic.md)
+- [Implementation Plan](../docs/implementation_plan.md)
+- [Project Workflow](../docs/workflow.md)
+- [Project Rules](../docs/PROJECT_RULES.md)
+- [Project Checklist](../docs/PROJECT_CHECKLIST.md)
+
+## API Reference
+- See `API_REFERENCE.md` (to be created) for details on frontend-backend communication, data models, and integration points.
+
+## Architecture
+- See `ARCHITECTURE.md` (to be created) for frontend architecture, navigation, and state management.
+
 ---
 
 For more details, see the main project documentation and PRD.
