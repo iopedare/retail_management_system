@@ -34,18 +34,44 @@ This is the backend service for the Retail Management System, built with Flask a
    python run.py
    ```
 
-## Documentation & References
-- [Business Logic](../docs/business_logic.md)
-- [Implementation Plan](../docs/implementation_plan.md)
-- [Project Workflow](../docs/workflow.md)
-- [Project Rules](../docs/PROJECT_RULES.md)
-- [Project Checklist](../docs/PROJECT_CHECKLIST.md)
+## Error Handling & Audit Trail
+- All sync operations (REST, WebSocket, conflict resolution, failover, etc.) are wrapped in robust error handling.
+- All operations and errors are logged to the SyncAuditLog model for traceability, compliance, and troubleshooting.
+- See [ARCHITECTURE.md](ARCHITECTURE.md) for details.
+
+## Sync Logic Summary
+- Periodic sync (every 30s) for all devices
+- Immediate sync for critical events (real-time broadcast)
+- Conflict resolution (first-come, first-served)
+- Failover and device reconnection logic
+- Full audit trail for all sync operations
+
+## Documentation
+- [ARCHITECTURE.md](ARCHITECTURE.md): Backend architecture, sync protocol, error handling, audit trail
+- [API_REFERENCE.md](API_REFERENCE.md): REST and WebSocket API endpoints
 
 ## API Reference
 - See `API_REFERENCE.md` (to be created) for details on REST and WebSocket endpoints, parameters, and examples.
 
 ## Architecture
 - See `ARCHITECTURE.md` (to be created) for backend architecture, master-client sync, and data flow.
+
+## Progress
+- [x] SyncEvent model and database integration complete (CRUD tested)
+- [ ] REST and WebSocket API endpoints for sync (in progress)
+
+## Testing the SyncEvent Model
+You can run the test script from any directory:
+
+```bash
+python backend/tests/test_sync_event_model.py
+```
+
+or
+
+```bash
+python -m tests.test_sync_event_model
+```
 
 ---
 

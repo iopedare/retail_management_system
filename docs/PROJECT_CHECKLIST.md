@@ -8,10 +8,10 @@
 | 2   | Initialize Git repository and project structure           | Frontend    | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
 | 3   | Set up core markdown documentation                        | Backend     | Completed   | 2025-07-24   | 2025-07-24     | [x]  |
 | 4   | Set up core markdown documentation                        | Frontend    | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
-| 5   | Set up backend (Flask + Flask-SocketIO) environment       | Backend     | Pending     |              |                | [ ]  |
-| 6   | Set up frontend (Flutter Desktop) environment             | Frontend    | Pending     |              |                | [ ]  |
-| 7   | Define master-client architecture and sync logic           | Backend     | Pending     |              |                | [ ]  |
-| 8   | Define master-client architecture and sync logic           | Frontend    | Pending     |              |                | [ ]  |
+| 5   | Set up backend (Flask + Flask-SocketIO) environment       | Backend     | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 6   | Set up frontend (Flutter Desktop) environment             | Frontend    | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 7   | Define master-client architecture and sync logic           | Backend     | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 8   | Define master-client architecture and sync logic           | Frontend    | In Progress | 2025-07-25   |                | [ ]  |
 | 9   | Implement user roles and permissions                      | Backend     | Pending     |              |                | [ ]  |
 | 10  | Implement user roles and permissions                      | Frontend    | Pending     |              |                | [ ]  |
 | 11  | Create authentication endpoints                           | Backend     | Pending     |              |                | [ ]  |
@@ -97,13 +97,62 @@
 
 ## Granular Steps
 
-*This table will be populated with detailed steps for the currently in-progress task. When you start a task, granular steps will be generated here. When you move to the next task, the granular steps for that task will be generated and tracked below.*
-
 | S/N | Step                                                                 | Status      | Started Date | Completed Date | Done |
 |-----|----------------------------------------------------------------------|-------------|--------------|----------------|------|
-| 1   | Review required markdown files for frontend documentation            | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
-| 2   | Create or update README.md in frontend with frontend-specific info   | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
-| 3   | Ensure frontend-relevant sections in docs/ are up to date            | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
-| 4   | Add frontend setup and usage instructions to documentation           | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
-| 5   | Commit and push updated markdown documentation                       | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+| 1   | Draft frontend sync architecture doc (ARCHITECTURE.md)              | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+|     |   - [x] Review backend sync logic and requirements                  |             |              |                |      |
+|     |   - [x] Outline frontend sync flow (periodic, immediate, master-client) |             |              |                |      |
+|     |   - [x] Create sequence diagrams for sync protocol                  |             |              |                |      |
+|     |   - [x] Document integration points with backend APIs/WebSocket events |             |              |                |      |
+|     |   - [x] Review with stakeholders and update as needed               |             |              |                |      |
+| 2   | Scaffold Flutter API/WebSocket integration                          | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+|     |   - [x] Set up REST API service for sync endpoints                  |             |              |                |      |
+|     |   - [x] Set up WebSocket service for real-time events               |             |              |                |      |
+|     |   - [x] Integrate both services into main app entry point           |             |              |                |      |
+|     |   - [x] Test connectivity to backend                                |             |              |                |      |
+|     |   - [x] Add comments and documentation for new code                 |             |              |                |      |
+| 3   | Implement device registration and sync event handling                | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+|     |   - [x] Generate and persist device ID on first launch              |             |              |                |      |
+|     |   - [x] Register device with backend via REST API                   |             |              |                |      |
+|     |   - [x] Connect to backend WebSocket and register device on connect |             |              |                |      |
+|     |   - [x] Listen for sync events (critical_event, acknowledge, etc.)  |             |              |                |      |
+|     |   - [x] Update app state/UI based on sync events                    |             |              |                |      |
+|     |   - [x] Add error handling and reconnection logic                   |             |              |                |      |
+|     |   - [x] Provide UI feedback for registration and sync status        |             |              |                |      |
+|     |   - [x] Write integration tests for registration and event handling |             |              |                |      |
+| 4   | Build UI for sync status                                            | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+|     |   - [x] Design or enhance the sync status bar/widget                |             |              |                |      |
+|     |   - [x] Display connection status, device ID, role, last sync, pending |             |              |                |      |
+|     |   - [x] Add color coding and icons for statuses                     |             |              |                |      |
+|     |   - [x] Add tooltips and optional retry button for errors           |             |              |                |      |
+|     |   - [x] Integrate status bar into main app layout                   |             |              |                |      |
+|     |   - [x] Test UI updates for all status transitions                  |             |              |                |      |
+|     |   - [x] Document the sync status UI                                 |             |              |                |      |
+| 5   | Test frontend-backend sync (integration tests)                      | Completed   | 2025-07-25   | 2025-07-25     | [x]  |
+|     |   - [x] Write tests for device registration (success, failure, retry) |             |              |                |      |
+|     |   - [x] Write tests for WebSocket event handling                    |             |              |                |      |
+|     |   - [x] Simulate backend disconnects and reconnections              |             |              |                |      |
+|     |   - [x] Test UI feedback for all sync statuses                      |             |              |                |      |
+|     |   - [x] Document test cases and results                             |             |              |                |      |
+| 6   | Conduct user acceptance testing (UAT) for backend sync features     | Pending     |              |                | [ ]  |
+|     |   - [ ] Prepare UAT scenarios for backend sync                      |             |              |                |      |
+|     |   - [ ] Have users perform sync operations and record feedback      |             |              |                |      |
+|     |   - [ ] Log and triage any issues or feature requests               |             |              |                |      |
+|     |   - [ ] Update documentation with UAT results and next steps        |             |              |                |      |
+| 7   | Conduct user acceptance testing (UAT) for frontend integration      | Pending     |              |                | [ ]  |
+|     |   - [ ] Prepare UAT scenarios for frontend sync and UI              |             |              |                |      |
+|     |   - [ ] Have users test device registration, sync status, event handling |             |              |                |      |
+|     |   - [ ] Collect feedback and log issues                             |             |              |                |      |
+|     |   - [ ] Update documentation with UAT results and next steps        |             |              |                |      |
+| 8   | Add/plan advanced sync features (conflict resolution, failover, etc.)| Pending    |              |                | [ ]  |
+|     |   - [ ] Review current sync logic for gaps                          |             |              |                |      |
+|     |   - [ ] Design and document advanced features                       |             |              |                |      |
+|     |   - [ ] Break down each feature into implementation tasks           |             |              |                |      |
+|     |   - [ ] Update architecture and implementation plan docs            |             |              |                |      |
+|     |   - [ ] Get stakeholder approval before implementation              |             |              |                |      |
+| 9   | Document and mark task as completed                                 | Pending     |              |                | [ ]  |
+|     |   - [ ] Summarize what was done for the step in step_and_summary.md |             |              |                |      |
+|     |   - [ ] Mark the step as completed in PROJECT_CHECKLIST.md          |             |              |                |      |
+|     |   - [ ] Add improvement suggestions or follow-up actions            |             |              |                |      |
+|     |   - [ ] Ensure all related documentation is up to date              |             |              |                |      |
 

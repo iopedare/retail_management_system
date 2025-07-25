@@ -35,6 +35,7 @@ This document provides a detailed, step-by-step plan for implementing the Retail
 - Implement login screen and role-based redirects
 - Create main dashboard layout (sidebar, top bar, alert panel)
 - Add system health and sync status indicators
+- Sync status UI implemented, tested, and documented (see PROJECT_CHECKLIST.md and step_and_summary.md)
 
 ## 5. Point of Sale (POS) Module
 - Product search (name, barcode, SKU)
