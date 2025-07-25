@@ -85,6 +85,15 @@ This document provides a detailed, step-by-step plan for implementing the Retail
 - Master election and failover protocol
 - Sync logs and audit trails
 
+### Master-Client Sync Protocol (Detailed)
+- **Local DB:** Each device maintains its own SQLite DB.
+- **Periodic Sync:** Every device runs a background sync every 30 seconds, sending unsynced changes to the master and receiving updates/deltas.
+- **Immediate Sync:** On critical events (e.g., stock depletion), the client immediately sends the update to the master, which broadcasts the change to all clients in real time.
+- **Conflict Resolution:** Master node resolves conflicts (first-come, first-served by timestamp or priority) and notifies all clients of the outcome.
+- **Failover:** If the master goes offline, a backup client is promoted to master and all clients reconnect.
+- **Error Handling:** Failed syncs are retried on the next interval; immediate sync failures are queued for periodic sync; users are notified if sync fails for an extended period.
+- **Audit Trail:** All sync operations are logged and linked to the originating user/device.
+
 ## 12. Device Management & Hardware Integration
 - Device ID assignment and switching
 - Primary/backup device logic
