@@ -34,6 +34,7 @@ This document outlines the step-by-step workflow for starting and running the pr
   - Update `step_and_summary.md` (summarize what was done, suggest improvements).
 - Before starting the next step, repeat the planning/approval process.
 - Sync status UI step fully completed and documented (see checklist and step_and_summary.md)
+- UAT testing for backend sync features completed successfully - device registration, disconnect/reconnect, and error handling all validated
 
 ## 6. Continuous Documentation
 - If any rules, requirements, or plans change, immediately update the relevant markdown files:
